@@ -1,0 +1,140 @@
+1.标准页面
+
+<html>
+    <head>
+        <meta  charset="UTF-8">
+        <title>baidu</title>
+    </head>
+   
+<body>
+
+</body> 
+
+</html> 
+
+
+2. a标签  img标签
+
+a标签：点击“百度”时，跳转到这个网址‘http://www.baidu.com’所示的页面
+
+target="_blank"属性是指定在新窗口打开页面（固定写法）
+
+title=""  属性是当鼠标悬停在链接上时，右下角显示""中的内容
+
+<a href="http://www.baidu.com" target="_blank" title="这是一个网站">百度</a>
+
+img标签  单标签、图片标签
+
+alt=""  指定img标签的描述：当图片加载不成功时，会显示alt的内容；优化
+
+<img src="dog.jpg" weight="600" height="600" alt="一只可爱的小狗" />
+
+
+3. 代码注释  在网页中不会显示，起说明标注的作用
+
+  <body>
+
+          <!--头部开始-->
+          
+          <!--头部结束-->
+  </body>
+
+4. 文字标签
+
+  h1到h6文字逐渐变小
+
+  <h1>  百度  <h1>    一般来讲，h1标签在一个页面中只能用一次
+
+  <h2>  百度  <h2>
+
+  <h3>  百度  <h3>
+
+  <h4>  百度  <h4>
+
+  <h5>  百度  <h5>
+
+  <h6>  百度  <h6>
+
+ 
+
+<strong>  </strong> 给文字加粗
+
+<em>  </em> 文字倾斜
+
+<u>  </u>添加下划线
+ 
+5. 关键词 描述 自动跳转
+
+ <head>
+
+      <meta charset="UTF-8">
+
+       <title>标题</title>
+        
+        <!--指定关键词，一般3-5个-->
+       
+        <meta name="keywords"  content="关键词"/>
+
+        <!--指定描述,一般80-200字，不要求辞藻华丽，但要语句通顺-->
+
+        <meta name="description"  content="描述"/>
+
+        <!--自动跳转；3s后自动跳转到百度-->
+
+        <meta http-equiv="refresh" content"3;url=http://bidu.com"/>
+
+ </head>
+
+
+6. 网页编码、乱码
+ 
+常用字符编码
+
+   GBK-汉子内码扩展规范，兼容GB2312
+
+   UTF-8-万国码（推荐）
+
+   解决乱码问题用EmEditor
+
+
+7.a标签锚链接效果
+  
+   超链接是在不同页面间跳转
+
+   锚链接是在一个页面内部跳转
+
+  <!--超链接-->
+
+  <a href="http://www.baidu.com">百度</a>
+  
+  <!--锚链接-->
+   
+  <a href="#two">第二章</a>
+
+  <h2 id="two">第二章</h2>
+
+返回顶部效果
+
+<a href="#">返回顶部</a>
+
+
+8.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
