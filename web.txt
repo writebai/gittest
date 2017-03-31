@@ -184,6 +184,107 @@ alt=""  指定img标签的描述：当图片加载不成功时，会显示alt的
 
 11.表格
 
+  table 表示这是一个表格
+
+  tr 表示这是表格中的一行
+
+  td 表示一个具体的单元格
+
+  注：table,tr ,td标签之间不能写任何的东西，所有东西都必须放在td之间
+  
+  border="1"  表示给表格添加边框，边框是1
+  
+  align="center" 写在table中表示让整个表格居中，如果写在tr td中表示让表格里面的文字居中
+  
+  bgcolor="green"  指定颜色
+
+  <table border="1" width="800"  align="center" >                
+       
+      <tr height="50" bgcolor="green"  valign="top">  
+                                               
+          <td >百度</td>                                          
+          <td></td>                           
+          <td></td>              快捷写法：tr*5>td{百度}*6 然后按下tab键，自动生成 
+          <td></td>
+          <td></td>                        5行6列
+          <td></td>
+      </tr>
+
+  </table>
+
+  常见单词：
+
+ 灰色 grey  粉色 pink  白色 white  橙色 orange  
+
+ 下 bottom  水平居中 center  垂直居中  middle
+
+12.表格合并
+
+ 合并单元格的方法：
+
+ 在代码中找到要合并的单元格；保留要合并的单元格中的第一个，删掉后面的；给保留下来的单元  
+ 格指定占用的行数或列数；
+
+ 合并左右单元格用 colspan
+
+ 合并上下单元格用 rowspan
+
+13.表单
+
+ 表单是将里面的内容一起发送
+
+ form 标签表示这是一组表单
+
+ 
+
+ <form action="">
+
+     用户名: <input type="text">
+
+     密码: <input type="password">
+
+
+
+ </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
