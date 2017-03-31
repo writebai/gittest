@@ -1,4 +1,11 @@
-﻿1.标准页面
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		 1.标准页面
 
 <html>
     <head>
@@ -29,11 +36,8 @@ alt=""  指定img标签的描述：当图片加载不成功时，会显示alt的
 
 
 3. 代码注释  在网页中不会显示，起说明标注的作用
-
   <body>
-
           <!--头部开始-->
-          
           <!--头部结束-->
   </body>
 
@@ -52,9 +56,7 @@ alt=""  指定img标签的描述：当图片加载不成功时，会显示alt的
   <h5>  百度  <h5>
 
   <h6>  百度  <h6>
-
  
-
 <strong>  </strong> 给文字加粗
 
 <em>  </em> 文字倾斜
@@ -239,70 +241,116 @@ alt=""  指定img标签的描述：当图片加载不成功时，会显示alt的
  
  <form action="" method="post">
 
-     <input type="text"/>    用户名
+     <input type="text"/>        用户名
      <input type="password"/>    密码
-     <input type="radio"/>   单选框
-     <input type="checkbox"/>  复选框
-     <input type="hidden"/>  隐藏框
-     <input type="submit"/>  提交按钮
-     <input type="file"/>  文件域
-     <input type="reset"/>  重置按钮
-     <input type="button"/>  按钮
-     <textarea></textarea>   文本区域
+     <input type="radio"/>       单选框
+     <input type="checkbox"/>    复选框
+     <input type="hidden"/>      隐藏框
+     <input type="submit"/>      提交按钮
+     <input type="file"/>        文件域
+     <input type="reset"/>       重置按钮
+     <input type="button"/>      按钮
+     <textarea></textarea>       文本区域
      <select>
-            <option></option>   下拉框
+            <option></option>    下拉框
      </select>
    
  </form>
 
  14.表单应用
+ <form action="" method="post">
  	<h1>报名表</h1>
  	姓名:<input type="text"/>
- 	<br /><br />                      换行标签，换两行  快捷键：shift+enter
+ 	<br /><br />                      <!--换行标签，换两行  快捷键：shift+enter-->
  	密码：<input type="password" />
  	<br /><br />
- 	性别: 男<input type=>
+ 	性别: 男<input type="radio" /> 女<input type="radio" />
+ 	<br /><br />
+ 	兴趣:羽毛球<input type="checkbox" />
+ 		足球<input type="checkbox" />
+ 		乒乓<input type="checkbox" />
+ 		<br /><br />
+ 	学历：<select >
+ 			<option>小学</option>
+ 			<option>初中</option>
+ 			<option>高中</option>
+ 			<option>本科</option>
+ 			<option>硕士</option>
+ 		</select>
+ 	<br /><br />
+ 	照片：<input type="file" />
+ 	<br /><br />
+ 	个人介绍：<textarea></textarea>
+ 	<br /><br />
+ 	提交：<input type="submit" />
+ 	重置：<input type="reset" />
+</form>
+
+15.表单发送	
+	<form action="biaodan.php" method="post">
+ 	姓名:<input type="text" name="username"/>
+ 	<br /><br />                      <!--换行标签，换两行  快捷键：shift+enter-->
+ 	密码：<input type="password" />
+ 	<br /><br />
+ 	性别: 男<input type="radio" name="sex" value="1"/> 
+ 	女<input type="radio" name="sex" value="0"/>
+ 	<br /><br />
  	
- 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 	<!--同一复选框的name属性值要一样，并且name指后面都要加上[]-->
+ 	兴趣:羽毛球<input type="checkbox" name="interst[]" value="yumao"/>
+ 		足球<input type="checkbox" name="interst[]"value="zuqiu"/>
+ 		乒乓<input type="checkbox" name="interst[]"value="pingpang"/>
+ 		<br /><br />
+ 	<!--如果下拉列表中的option有value值，就发送value值；-->
+ 	<!--如果没有value值，就发送选中的option标签的内容-->
+ 	学历：<select name="education">
+ 			<option>小学</option>
+ 			<option>初中</option>
+ 			<option>高中</option>
+ 			<option>本科</option>
+ 			<option>硕士</option>
+ 		</select>
+ 	<br /><br />
+ 	照片：<input type="file" />
+ 	<br /><br />
+ 	个人介绍：<textarea name="description"></textarea>
+ 	<br /><br />
+ 	<input type="submit" />
+ 	<input type="reset" />
+</form>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+</html>
