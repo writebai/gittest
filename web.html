@@ -289,7 +289,8 @@ alt=""  指定img标签的描述：当图片加载不成功时，会显示alt的
 15.表单发送	
 	<form action="biaodan.php" method="post">
  	姓名:<input type="text" name="username"/>
- 	<br /><br />                      <!--换行标签，换两行  快捷键：shift+enter-->
+ 	<!--换行标签，换两行  快捷键：shift+enter-->
+ 	<br /><br />                      
  	密码：<input type="password" />
  	<br /><br />
  	性别: 男<input type="radio" name="sex" value="1"/> 
@@ -318,17 +319,34 @@ alt=""  指定img标签的描述：当图片加载不成功时，会显示alt的
  	<input type="submit" />
  	<input type="reset" />
 </form>
+
+16.表单的一些属性
+	<!--value可以指定默认值；maxlength指定字符数量;disabled指禁止元素，不能修改-->
+	姓名:<input type="text" name="username" value="张三" maxlength="5"
+		disabled="disabled">
+	<!--默认选中单选或多选框用的是checked="checked"属性-->
+	性别: 男<input type="radio" name="sex" value="1"/> 
+ 	女<input type="radio" name="sex" value="0" checked="checked"/>
+	<!--默认选中下拉列表用的是selected="selected"属性-->
+	学历：<select name="education">
+ 			<option>小学</option>
+ 			<option selected="selected>初中</option>
+ 			<option>高中</option>
+ 			<option>本科</option>
+ 			<option>硕士</option>
+ 		</select>
+	<!--直接在标签中间输入内容-->
+	个人介绍：<textarea name="description">无特点</textarea>
+	<!--通过value标签，改变按钮中的内容-->
+	<input type="submit" value="填写完毕"/>
+ 	<input type="reset" value="写错了"/>
+ 	<!--隐藏域-->
+ 	<input type="hidden"  value="隐藏域的内容" name="anhao"/>
 	
+17.divcss布局
+	四种引入方式
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	 
 	
 	
 	
